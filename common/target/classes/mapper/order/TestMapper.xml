@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.happy3ing.common.order.mapper.TestMapper">
+    <delete id="deleteById">
+        delete from order_test where id = #{id}
+    </delete>
+
+    <select id="selectPage" resultType="com.happy3ing.common.order.entity.Test">
+        SELECT * FROM order_test
+    </select>
+
+</mapper>
